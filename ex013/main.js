@@ -1,15 +1,31 @@
 let res = document.getElementById('res')
 
 function converter() {
-    let valor1 = prompt('digite uma distância em metros (m)')
+    let metros = prompt('digite uma distância em metros (m)')
+
+    //VERIFICA SE A ENTRADA E UM NUMERO
+    if (isNaN(metros)) {
+        alert('Digite um numero valido')
+    } else {
+        metros = metros.replace(',', '.')
+        var numeroDecimal = parseFloat(metros)
     
+        //REALIZA O CALCULO
+        var km = numeroDecimal / 1000
+        var hm = numeroDecimal / 100
+        var dam = numeroDecimal / 10
+        var dm = numeroDecimal * 10
+        var cm = numeroDecimal * 100
+        var mm = numeroDecimal * 1000  
 
 
-    res.innerHTML = `A distância de ${valor1} metros, corresponde a...`
-    res.innerHTML += `<p>quilômetros (Km)</p>`
-    res.innerHTML += `<p>hectômetros (Hm)</p>`
-    res.innerHTML += `<p>decâmetros (Dam)</p>`
-    res.innerHTML += `<p>decimetros (dm)</p>`
-    res.innerHTML += `<p>centimetros (cm)</p>`
-    res.innerHTML += `<p>malimetros (mm)</p>`
+        //EXIBE OS RESULTADOS
+        res.innerHTML = `A distância de ${metros} metros, corresponde a...`
+    res.innerHTML += `<p>${km} quilômetros (Km)</p>`
+    res.innerHTML += `<p>${hm} hectômetros (Hm)</p>`
+    res.innerHTML += `<p>${dam} decâmetros (Dam)</p>`
+    res.innerHTML += `<p>${dm} decimetros (dm)</p>`
+    res.innerHTML += `<p>${cm} centimetros (cm)</p>`
+    res.innerHTML += `<p>${mm} malimetros (mm)</p>`
+    }
 }
