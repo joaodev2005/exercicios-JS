@@ -6,7 +6,7 @@ function desconto() {
     var valorComDesconto = valor - (valor * desconto)
     var valorDesconto = valor - valorComDesconto
 
-
+ 
     res.innerHTML = `Calculando desconto de 10% para ${produto}`
     res.innerHTML += `<p>O preço original era R$${valor}</p>`
     res.innerHTML += `<p>voce acaba de ganhar ${valorDesconto} de desconto (-10%)</p>`
