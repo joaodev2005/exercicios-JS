@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+button {
+    cursor: pointer;
+    padding: 20px;
+    font-weight: bold;
+}
