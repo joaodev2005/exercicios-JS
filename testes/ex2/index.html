@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salario</title>
+
+    <style>
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #name, #sal {
+            display: flex;
+            gap: 1rem;
+        }
+
+        #sal {
+            margin-bottom: 15px;
+        }
+
+        #name, #sal, #res {
+            border: none;
+            border-bottom: 2px solid gray;
+            width: 500px;
+        }
+
+        #name, #sal, #res:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body><h1>Funcionario</h1>
+    <main>
+
+        <div class="valor box">
+            <label for="name">Nome:</label>
+            <input type="text" id="name">
+        </div>
+
+        <div class="valor box">
+            <label for="sal">Salario:</label>
+            <input type="text" id="sal">
+        </div>
+
+        <div class="valor">
+            <input type="text" id="res">
+        </div>
+        <button id="btn" onclick="showPrompt()">Gerar relatorio</button>
+    </main>
+    
+    <script src="mains.js"></script>
+</body>
+</html>
