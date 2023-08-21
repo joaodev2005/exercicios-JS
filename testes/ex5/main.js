@@ -1,4 +1,4 @@
-let num = 10
+let num = 100
 let numAntecessor = num - 1
 let numSucessor = num + 1
 
