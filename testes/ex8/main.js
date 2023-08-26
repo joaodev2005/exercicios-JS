@@ -1,5 +1,5 @@
-let peso = 160
-let altura = 1.80
+let peso = 60
+let altura = 1.60
 
 valorAltura = altura * altura
 resultado = peso / valorAltura
@@ -18,6 +18,5 @@ if (resultadoFormatado < 18.5) {
 } else {
     console.log('Obesidade Mórbida')
 }
-
 
 console.log(`IMC : ${resultadoFormatado}`)
