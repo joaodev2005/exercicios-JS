@@ -1,0 +1,1 @@
+const funcionario = 'João'
