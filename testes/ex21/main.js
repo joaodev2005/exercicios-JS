@@ -1,6 +1,6 @@
 const nome = 'Rafaella'
 const sex = 'F'
-const compras = 3000
+const compras = 300
 
 if(sex == 'F') {
     res = (compras * 0.05 ) 
