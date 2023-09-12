@@ -1,6 +1,6 @@
-const segmento1 = 14
-const segmento2 = 14
-const segmento3 = 14
+const segmento1 = 12
+const segmento2 = 13
+const segmento3 = 19
 const resultadoSegmentos = segmento1 + segmento2
 
 if (resultadoSegmentos > segmento3) {
@@ -16,11 +16,3 @@ if (resultadoSegmentos > segmento3) {
 } else {
     console.log('Não é possível montar um triângulo com essas retas')
 }
-
-
-
-// 30) [DESAFIO] Refaça o algoritmo 25, acrescentando o recurso de mostrar que tipo
-// de triângulo será formado:
-//  - EQUILÁTERO: todos os lados iguais
-//  - ISÓSCELES: dois lados iguais
-//  - ESCALENO: todos os lados diferentes
