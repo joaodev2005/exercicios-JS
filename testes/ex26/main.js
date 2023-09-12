@@ -1,16 +1,19 @@
-const segmento1 = 10
-const segmento2 = 10
-const segmento3 = 10
+const segmento1 = 14
+const segmento2 = 14
+const segmento3 = 14
 const resultadoSegmentos = segmento1 + segmento2
 
-if(resultadoSegmentos > segmento3) {
+if (resultadoSegmentos > segmento3) {
     console.log('É possível montar um triângulo com essas retas')
-    if(segmento1 === segmento2 === segmento3) {
-        console.log('TRIÂNGULO EQUILÁTERO')
-    } else if(segmento1 === segmento2) {
+  
+    if(segmento1 == segmento2 || (segmento1 == segmento3) || (segmento2 == segmento3)) {
         console.log('TRIÂNGULO ISÓSCELES')
-    } 
-} else { 
+    } else if (segmento1 != segmento2 && (segmento1 != segmento3) && (segmento2 != segmento3)) {
+        console.log('TRIÂNGULO ESCALENO')
+    } else if (segmento1 == segmento2 && (segmento1 == segmento3)) {
+        console.log('TRIÂNGULO EQUILÁTERO')
+    }
+} else {
     console.log('Não é possível montar um triângulo com essas retas')
 }
 
