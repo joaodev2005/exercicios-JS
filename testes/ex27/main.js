@@ -21,6 +21,10 @@ function determinarVencedor(jogador, computador) {
 }
   
     console.log('escolha: pedra, papel ou tesoura')
+    console.log('jo')
+    console.log('ken')
+    console.log('Po')
+    
     const jogador = 'pedra'
 
     const computador = escolhaComputador()
