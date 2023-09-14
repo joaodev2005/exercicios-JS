@@ -22,7 +22,7 @@ function acertarNumero(jogador, computador) {
 const computador = escolhaNumeros()
 console.log(computador)
 
-const jogador = 3
+const jogador = 1
 
 const resultado = acertarNumero(jogador, computador)
 console.log(resultado)
