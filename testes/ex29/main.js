@@ -1,5 +1,5 @@
 const salario = 3500
-const valorCasa = 90000
+const valorCasa = 130000
 const qtdAnos = 14
 
 let limite = salario * 0.30
